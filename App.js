@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  ActivityIndicator,
-  Button,
-} from "react-native";
+import { StyleSheet, View, ActivityIndicator, Button } from "react-native";
 
-export default function App() {
+const App = () => {
   const [show, setShow] = useState(true);
   return (
     <View style={styles.container}>
@@ -22,10 +16,13 @@ export default function App() {
 
       {/* Show Hide Indicator with animating props*/}
       <ActivityIndicator size={80} color="tomato" animating={show} />
+
       <Button title="Show Hide Indicator" onPress={() => setShow(!show)} />
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {

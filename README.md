@@ -1,10 +1,10 @@
 # React Native ActivityIndicator
 
-# Props :
+# Usage :
 
 ## size :
 
-<p>Size of the indicator.</p>
+Size of the indicator.
 
 ```js
 <ActivityIndicator size="small" color="#0000ff" />;
@@ -16,7 +16,7 @@
 
 ## color :
 
-<p>The foreground color of the spinner.</p>
+The foreground color of the spinner.
 
 ```js
 color = "#0000ff";
@@ -24,7 +24,7 @@ color = "#0000ff";
 
 ## animating :
 
-<p>Whether to show the indicator (true) or hide it (false).</p>
+Whether to show the indicator (true) or hide it (false).
 
 ```js
 const [show, setShow] = useState(true);
@@ -32,21 +32,4 @@ const [show, setShow] = useState(true);
 <ActivityIndicator size={80} color="tomato" animating={show} />
 <Button title="Show Hide Indicator" onPress={() => setShow(!show)} />
 ...
-```
-
-## Usage
-
-```
- $ git clone https://github.com/SuryaKarmakar/React-Native-ActivityIndicator.git
- $ cd React-Native-ActivityIndicator
- $ npm install
- $ npm run [web, android, ios]
-
-```
-
-## Run with Expo
-
-```
- $ expo start --[web, android, ios]
-
 ```
