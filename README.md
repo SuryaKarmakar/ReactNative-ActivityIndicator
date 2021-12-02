@@ -1,5 +1,7 @@
 # React Native ActivityIndicator
 
+Displays a circular loading indicator.
+
 # Usage :
 
 ## size :
